@@ -167,24 +167,30 @@
             clickedBtn.classList.add("active");
         }
 
-        // 📥 Firebase Listener: Purani information hamesha live preview box me dikhayega
+        // 📥 FIXED: Firebase Listener jo seedhe root se data preview box me dikhayega
         function streamLiveDatabasePreviews() {
-            database.ref('dreamplays_hq/').on('value', (snapshot) => {
+            database.ref('/').on('value', (snapshot) => {
                 const data = snapshot.val();
                 if(data) {
+                    // Sari active news aur elements ka real preview dikhayega
                     document.getElementById("preview-news").innerText = data.newsData || "Notice board khali hai.";
                     document.getElementById("preview-project").innerText = data.activeProject || "Koyi naya project abhi active nahi hai.";
                     document.getElementById("preview-lock-status").innerText = "Status is currently: " + (data.lockStatus || "LOCKED");
+                } else {
+                    document.getElementById("preview-news").innerText = "Notice board khali hai.";
+                    document.getElementById("preview-project").innerText = "Koyi naya project abhi active nahi hai.";
+                    document.getElementById("preview-lock-status").innerText = "Status is currently: LOCKED";
                 }
             });
         }
 
-        // 📤 Admin Panel Data Uploader: Firebase par direct update push karega
+        // 📤 FIXED: Admin Panel Data Uploader jo direct path par update push karega
         function saveToFirebase(databasePathKey, formInputFieldId, notificationToastId) {
             let updateValue = document.getElementById(formInputFieldId).value;
             if(updateValue.trim() === "") { alert("Fields ko khali nahi chhod sakte!"); return; }
 
-            database.ref('dreamplays_hq/' + databasePathKey).set(updateValue)
+            // Path ko '/' se badal diya taaki direct update ho
+            database.ref('/' + databasePathKey).set(updateValue)
             .then(() => {
                 document.getElementById(formInputFieldId).value = ""; // Form clear karo
                 let toast = document.getElementById(notificationToastId);
@@ -195,6 +201,55 @@
                 alert("Firebase Storage Error: " + err.message);
             });
         }
+        // ... tumhari website ka pehle se likha hua saara code ...
+    // ... functions jaise closeSystemModal vagera chal rahe honge ...
+
+    // 👇 IS JAGAH PAR YE NEECHE WALA RECEPTION CODE PASTE KAR DO 👇
+
+    // ==================== HQ DATABASE LIVE RECEPTION SYSTEM ====================
+    const mainFirebaseConfig = {
+        apiKey: "YOUR_API_KEY", // Teri Web API Key (jo settings me thi)
+        authDomain: "ayartstudio01.firebaseapp.com",
+        databaseURL: "https://ayartstudio01-default-rtdb.firebaseio.com", // Teri Screen wala URL
+        projectId: "ayartstudio01",
+        storageBucket: "ayartstudio01.appspot.com",
+        messagingSenderId: "754790100234",
+        appId: "YOUR_APP_ID" // Teri App ID
+    };
+
+    // Initialize Firebase if not already done
+    if (!firebase.apps.length) {
+        firebase.initializeApp(mainFirebaseConfig);
+    }
+    const mainDb = firebase.database();
+
+    // 📥 FIXED PATH: Root '/' se data live receive karne ke liye
+    mainDb.ref('/').on('value', (snapshot) => {
+        const data = snapshot.val();
+        if (data) {
+            // 1. Live News Change Logic
+            let newsTicker = document.getElementById("news-ticker") || document.getElementById("global-news"); 
+            if (newsTicker && data.newsData) {
+                newsTicker.innerText = data.newsData;
+            }
+
+            // 2. Feature Locker Logic
+            if (data.lockStatus === "UNLOCKED") {
+                console.log("HQ Command: All Cards Unlocked!");
+            } else {
+                console.log("HQ Command: Features are Locked.");
+            }
+        }
+    });
+
+</script> ```
+
+### ⚠️ Ek Choti Si Cheez Mat Bhulna:
+Is reception code ko kaam karne ke liye Firebase ki library chahiye hogi. Toh apni `index.html` me sabse upar jahan **`<head>`** tag hai (ya jahan baki links hain), wahan ye dono lines zaroor check kar lena ki judi hain ya nahi:
+
+```html
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     </script>
 </body>
           </html>
