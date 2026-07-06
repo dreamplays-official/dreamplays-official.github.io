@@ -1,0 +1,39 @@
+{
+  "background_color": "#000000",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Dreamplays hq",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "DreamHQ",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://dreamplays-official.github.io/favicon.jpg",
+      "type": "image/jpeg",
+      "sizes": "720x797",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": true,
+      "width": 720,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "/",
+  "description": "Dreamplays hq is official parent company of Dreamplays focused on digital innovation, games , websites etc for next generation",
+  "lang": "en",
+  "categories": [
+    "business",
+    "developer",
+    "education",
+    "entertainment",
+    "games",
+    "network",
+    "productivity",
+    "social networking"
+  ]
+}
