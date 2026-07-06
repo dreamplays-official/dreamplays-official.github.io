@@ -1,39 +1,34 @@
 {
-  "background_color": "#000000",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "Dreamplays hq",
-  "orientation": "portrait",
-  "scope": "/",
+  "name": "DreamPlays HQ",
   "short_name": "DreamHQ",
-  "start_url": "/",
-  "theme_color": "#ffffff",
-  "icons": [
-    {
-      "src": "https://dreamplays-official.github.io/favicon.jpg",
-      "type": "image/jpeg",
-      "sizes": "720x797",
-      "isSquare": false,
-      "isPng": false,
-      "isWebp": false,
-      "isJpg": true,
-      "width": 720,
-      "is512x512": false,
-      "is256x256": false,
-      "is192x192": false
-    }
-  ],
   "id": "/",
-  "description": "Dreamplays hq is official parent company of Dreamplays focused on digital innovation, games , websites etc for next generation",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "description": "Official DreamPlays HQ app. Discover DreamPlays products, AyartStudio projects, updates and digital experiences.",
   "lang": "en",
+  "dir": "ltr",
   "categories": [
     "business",
-    "developer",
-    "education",
-    "entertainment",
-    "games",
-    "network",
     "productivity",
-    "social networking"
+    "entertainment",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
