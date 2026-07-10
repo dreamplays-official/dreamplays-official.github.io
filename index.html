@@ -29,6 +29,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        /* Certificate Slider Section CSS */
+.cert-slider-section {
+    background: #0f172a; /* Ultra Dark background */
+    padding: 50px 0;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid #1e293b;
+}
+
+.slider-title {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+/* Outer Wrapper */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* The track that moves infinitely */
+.slider-track {
+    display: flex;
+    width: calc(320px * 4 + 40px * 4); /* Auto calculated width for smooth loop */
+    gap: 40px;
+    animation: scrollLoop 15s linear infinite;
+}
+
+/* Pause animation on hover */
+.slider-wrapper:hover .slider-track {
+    animation-play-state: paused;
+}
+
+/* Individual Slide Cards */
+.slide-card {
+    background: #1e293b;
+    width: 320px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.slide-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; /* Photo distortion se bachegi */
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background: #273549;
+    padding: 5px;
+}
+
+.slide-card h3 {
+    color: #f8fafc;
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.slide-card p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* Card Borders for Premium Feel */
+.google-border { border-bottom: 4px solid #ea4335; }
+.microsoft-border { border-bottom: 4px solid #00a4ef; }
+
+/* Infinite Loop Animation Definition */
+@keyframes scrollLoop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-320px * 2 - 40px * 2)); /* Exactly moves half of total width */
+    }
+}
+
+/* Mobile Responsive adjustment */
+@media (max-width: 768px) {
+    .slider-title { font-size: 1.4rem; }
+    .slide-card { width: 280px; }
+        }
+    
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #FFFFFF;
@@ -499,7 +591,40 @@
             <div id="auth-dashboard" class="hidden text-center space-y-6"><p id="dashboard-user" class="text-xs text-neutral-500"></p><button onclick="window.handleLogout()" class="w-full py-3 bg-white border text-black text-xs font-bold uppercase rounded-lg">De-Authorize Node</button></div>
         </div>
     </section>
+    <section class="cert-slider-section">
+    <h2 class="slider-title">My Verified Achievements & Certifications</h2>
+    
+    <div class="slider-wrapper">
+        <div class="slider-track">
+            
+            <div class="slide-card google-border">
+                <img src="google-analytics-cert.png" alt="Google Analytics Certification 2026">
+                <h3>Google Analytics Certified</h3>
+                <p>Google Skillshop • ID: 187799158</p>
+            </div>
 
+            <div class="slide-card microsoft-border">
+                <img src="microsoft-html-css-cert.jpg" alt="Microsoft Web Specialist Certification">
+                <h3>HTML & CSS Specialist</h3>
+                <p>Microsoft Learn Verified</p>
+            </div>
+
+            <div class="slide-card google-border">
+                <img src="google-analytics-cert.jpg" alt="Google Analytics Certification 2026">
+                <h3>Google Analytics Certified</h3>
+                <p>Google Skillshop • ID: 187799158</p>
+            </div>
+
+            <div class="slide-card microsoft-border">
+                <img src="microsoft-html-css-cert.png" alt="Microsoft Web Specialist Certification">
+                <h3>HTML & CSS Specialist</h3>
+                <p>Microsoft Learn Verified</p>
+            </div>
+
+        </div>
+    </div>
+    </section>
+    
     <!-- ============================================ -->
     <!-- UPDATED FOOTER - SOLUTION 2                  -->
     <!-- ============================================ -->
