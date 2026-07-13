@@ -1,0 +1,193 @@
+    <style>
+        /* --- Line 35 se shuru karein --- */
+.cert-slider-section {
+    background: #0f172a;
+    padding: 60px 0;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid #1e293b;
+}
+
+.slider-title {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+/* Outer Wrapper */
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+}
+
+/* The track that moves infinitely (Optimized for 6 big landscape cards) */
+.slider-track {
+    display: flex;
+    width: calc(450px * 6 + 40px * 6); /* 450px width for landscape layout */
+    gap: 40px;
+    animation: scrollLoop 25s linear infinite; /* Smooth slow animation for big cards */
+}
+
+/* Pause animation on hover */
+.slider-wrapper:hover .slider-track {
+    animation-play-state: paused;
+}
+
+/* Individual Slide Cards (Perfect Landscape Ratio) */
+.slide-card {
+    background: #1e293b;
+    width: 450px; /* Badi landscape size */
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    flex-shrink: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+/* Landscape Certificate Image Container */
+.slide-card img {
+    width: 100%;
+    height: 300px; /* Big landscape height */
+    object-fit: contain; /* Bina stretch hue photo solid dikhegi */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #111827;
+    padding: 8px;
+    border: 1px solid #334155;
+}
+
+.slide-card h3 { 
+    color: #f8fafc; 
+    font-size: 1.25rem; 
+    margin: 8px 0 4px 0;
+    font-weight: 600;
+}
+
+.slide-card p { 
+    color: #94a3b8; 
+    font-size: 0.9rem; 
+    margin: 0;
+}
+
+/* Bottom Borders for Premium Feel */
+.google-border { border-bottom: 4px solid #ea4335; }
+.microsoft-border { border-bottom: 4px solid #00a4ef; }
+.google-ads-border { border-bottom: 4px solid #fbbc05; }
+
+/* Infinite Loop Animation for 3 Unique Landscape Cards */
+@keyframes scrollLoop {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-450px * 3 - 40px * 3)); } /* Correct 3 card offset */
+}
+
+/* Mobile Responsive adjustment */
+@media (max-width: 768px) {
+    .slider-title { font-size: 1.5rem; }
+    .slide-card { width: 320px; } /* Mobile me automatically thoda normal size ho jayega */
+    .slide-card img { height: 210px; }
+    .slider-track { width: calc(320px * 6 + 20px * 6); gap: 20px; }
+    @keyframes scrollLoop {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-320px * 3 - 20px * 3)); }
+    }
+}
+/* --- Line 125 yahan khatam hoti hai --- */
+    
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .glassmorphism-dark {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .premium-shadow {
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.05), 0 10px 30px -10px rgba(0, 0, 0, 0.03);
+        }
+        .premium-shadow-hover {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .premium-shadow-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 50px 80px -20px rgba(0, 0, 0, 0.09);
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FFFFFF; }
+        ::-webkit-scrollbar-thumb { background: #E5E5E5; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #000000; }
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            z-index: 999999;
+            display: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .cookie-banner.show { display: block; animation: slideUp 0.5s ease-out; }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        .app-download-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #000;
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            z-index: 99999;
+            animation: bounce 1.2s infinite;
+        }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .feedback-item {
+            border-left: 3px solid #000;
+            padding-left: 16px;
+            margin-bottom: 16px;
+            background: #fafafa;
+            padding: 16px;
+            border-radius: 8px;
+        }
+        .feedback-item .name { font-weight: 700; color: #000; font-size: 13px; }
+        .feedback-item .date { font-size: 10px; color: #999; margin-left: 10px; }
+        .feedback-item .text { font-size: 13px; color: #444; margin-top: 4px; line-height: 1.5; }
+        .feedback-item .rating { color: #f59e0b; font-size: 12px; }
+        .modal-content-scroll {
+            max-height: 70vh;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .modal-content-scroll::-webkit-scrollbar { width: 4px; }
+        .modal-content-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+    </style>
