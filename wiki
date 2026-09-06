@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamPlays HQ - Wikipedia</title>
+    <link rel="icon" type="image/jpeg" href="dreamplays-official.github.io/wiki.favicon.jpg">
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #202122;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            border-bottom: 1px solid #a2a9b1;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .wiki-logo {
+            font-family: "Linux Libertine", Georgia, Times, serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000;
+        }
+        .nav-links a {
+            margin-left: 15px;
+            color: #0645ad;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-family: "Linux Libertine", Georgia, Times, serif;
+            font-size: 1.8rem;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-family: "Linux Libertine", Georgia, Times, serif;
+            font-size: 1.3rem;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 3px;
+            margin-top: 30px;
+        }
+        p {
+            margin: 0 0 1em 0;
+            text-align: justify;
+        }
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .infobox {
+            float: right;
+            clear: right;
+            width: 280px;
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        .infobox th {
+            text-align: center;
+            background-color: #eaecf0;
+            padding: 6px;
+            font-size: 15px;
+            font-family: "Linux Libertine", Georgia, Times, serif;
+        }
+        .infobox td {
+            padding: 5px;
+            border-bottom: 1px solid #eaecf0;
+            vertical-align: top;
+        }
+        .infobox-image {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .infobox-image img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border: 1px solid #a2a9b1;
+            background: #fff;
+        }
+        .toc {
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .toc-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .toc ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .toc li {
+            margin-bottom: 4px;
+        }
+        .content::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        footer {
+            border-top: 1px solid #a2a9b1;
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #54595d;
+            background-color: #f8f9fa;
+        }
+        @media (max-width: 768px) {
+            .infobox {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="wiki-logo">📚 DreamPlays Encyclopedia</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="arnav-tyagi.html">Founder</a>
+            <a href="yugank-vishnoi.html">Co-Founder</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </header>
+
+    <div class="container content">
+        
+        <h1>DreamPlays HQ</h1>
+        
+        <!-- Infobox with Logo and Details -->
+        <table class="infobox">
+            <tr>
+                <th colspan="2">DreamPlays HQ</th>
+            </tr>
+            <tr>
+                <td colspan="2" class="infobox-image">
+                    <img src="dreamplays-official.github.io/wiki.favicon.jpg" alt="DreamPlays HQ Logo">
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Type</strong></td>
+                <td>Private / Student-Led EdTech Startup</td>
+            </tr>
+            <tr>
+                <td><strong>Founded</strong></td>
+                <td>2026; Rudrapur, Uttarakhand, India</td>
+            </tr>
+            <tr>
+                <td><strong>Founders</strong></td>
+                <td><a href="arnav-tyagi.html">Arnav Tyagi</a>, <a href="yugank-vishnoi.html">Yugank Vishnoi</a></td>
+            </tr>
+            <tr>
+                <td><strong>Registration</strong></td>
+                <td>MSME (UDYAM-UK-12-0098916)</td>
+            </tr>
+            <tr>
+                <td><strong>Core Products</strong></td>
+                <td><a href="projects.html">AYARTSTUDIO</a>, Mobile Utility Hub</td>
+            </tr>
+            <tr>
+                <td><strong>Website</strong></td>
+                <td><a href="https://dreamplays-official.github.io/" target="_blank">dreamplays-official.github.io</a></td>
+            </tr>
+        </table>
+
+        <p><strong>Dreamplays HQ</strong> (officially registered under MSME as Dream Plays Official) is an independent Indian EdTech and software utility startup. Headquartered in Rudrapur, Udham Singh Nagar, Uttarakhand, the platform was founded in 2026 by student innovators Arnav Tyagi and Yugank Vishnoi. The organization is known for developing open-access, lightweight, client-side browser tools aimed at eliminating socio-economic and hardware barriers for students and digital creators. The company is formally recognized under the Startup Uttarakhand initiative and holds an official MSME registration (UDYAM-UK-12-0098916).</p>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <div class="toc-title">Contents</div>
+            <ul>
+                <li><a href="#history">1 History and Smartphone-Only Development</a></li>
+                <li><a href="#ecosystem">2 Core Projects and Software Ecosystem</a>
+                    <ul>
+                        <li><a href="#ayartstudio">2.1 AYARTSTUDIO</a></li>
+                        <li><a href="#mobile-utility">2.2 DreamPlays Mobile Application Hub</a></li>
+                    </ul>
+                </li>
+                <li><a href="#architecture">3 Technical Architecture</a></li>
+                <li><a href="#corporate">4 Corporate Structure and Initiatives</a></li>
+            </ul>
+        </div>
+
+        <h2 id="history">History and Smartphone-Only Development</h2>
+        <p>The conceptualization of Dreamplays HQ began as a collaborative project between school peers Arnav Tyagi and Yugank Vishnoi. Observing that mainstream graphic design and programming tools required expensive computing hardware, they set out to construct a free, decentralized alternatives layout.</p>
+        <p>Due to a lack of traditional desktop hardware, the founders adopted an unconventional engineering workflow. The entire code repositories, vector graphics, platform assets, and early software updates were written, compiled, and deployed using strictly Android mobile smartphones. Following its public launch, the project expanded its infrastructure, eventually gaining international users across India, the United States, and China.</p>
+
+        <h2 id="ecosystem">Core Projects and Software Ecosystem</h2>
+        <p>The primary focus of Dreamplays HQ is the development of client-side web tools that run seamlessly on low-spec hardware and mobile browsers.</p>
+        
+        <h3 id="ayartstudio">AYARTSTUDIO</h3>
+        <p>AYARTSTUDIO is the primary creative framework hosted by the ecosystem. Operating on a 100% free model, it functions as an interactive web portal optimized for lower-tier mobile and desktop browsers. Its key features include:</p>
+        <ul>
+            <li><strong>Online Grid Maker:</strong> A technical browser extension that overlays scale matrices over user-submitted graphics, widely used by physical sketch artists for layout mapping.</li>
+            <li><strong>Art Education Syllabus:</strong> Accessible modules covering pencil gradients, perspective frameworks, and geometric anatomy guides tailored for student artists.</li>
+        </ul>
+
+        <h3 id="mobile-utility">DreamPlays Mobile Application Hub</h3>
+        <p>The platform manages an active Android sandbox application designed to act as an offline-capable nexus. It features an asynchronous engine layer that connects simple static web elements with system background processing tasks. The framework provides background token handshakes, local storage clearouts, and structured analytics logging panels.</p>
+
+        <h2 id="architecture">Technical Architecture</h2>
+        <p>The software stack at Dreamplays HQ is structured to minimize client-side payloads and bypass continuous computational rendering server costs.</p>
+        <ul>
+            <li><strong>Frontend Framework:</strong> Built natively using vanilla HTML5, Tailwind CSS, and ES6+ JavaScript, which ensures compatibility with simple mobile web views.</li>
+            <li><strong>Backend and Cloud Routing:</strong> Leverages secure Google Firebase endpoints to handle decentralized subscriber tokens and verification loops, while hosting is distributed directly over GitHub Pages architecture.</li>
+        </ul>
+
+        <h2 id="corporate">Corporate Structure and Initiatives</h2>
+        <p><strong>Leadership:</strong> Arnav Tyagi directs frontend optimization and responsive UI/UX modules, drawing from 4 years of open-source development. Yugank Vishnoi serves as Chief Infrastructure Engineer, overseeing data architecture, full-stack environments, and cloud databases.</p>
+        <p><strong>Monetization Model:</strong> To remain free to end-users, core tool pipelines rely on non-intrusive advertisements and enterprise sponsorships.</p>
+        <p><strong>Dream AI Roadmap:</strong> The organization has announced plans for "Dream AI," an upcoming browser-integrated client-side helper designed to provide lightweight real-time code parsing and layout tips directly within the sandbox.</p>
+
+    </div>
+
+    <footer>
+        <p>DreamPlays HQ Internal Encyclopedia. Maintained by the core team.</p>
+    </footer>
+
+</body>
+</html>
