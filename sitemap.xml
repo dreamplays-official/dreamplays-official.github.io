@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org">
 
+  <!-- 1st: Main Dreamplays HQ Parent Web -->
   <url>
     <loc>https://dreamplays-official.github.io/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
   </url>
 
+  <!-- 2nd: Founder Portfolio Page -->
   <url>
-    <loc>https://dreamplays-official.github.io/ayartstudio01/</loc>
-    <priority>0.9</priority>
+    <loc>https://dreamplays-official.github.io/arnav-tyagi</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 3rd: Official Biography Page -->
+  <url>
+    <loc>https://dreamplays-official.github.io/Dreamplays-biography-/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 4th: DreamTools Web Hub -->
+  <url>
+    <loc>https://dreamplays-official.github.io/dreamtools/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
   </url>
 
 </urlset>
