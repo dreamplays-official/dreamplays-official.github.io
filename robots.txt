@@ -1,4 +1,9 @@
+# User-Agent sets rules for all search engines (Google, Bing, etc.)
 User-agent: *
 Allow: /
+Allow: /arnav-tyagi
+Allow: /Dreamplays-biography-/
+Allow: /dreamtools/
 
-Sitemap: https://dreamplays-official.github.io/sitemap.xml
+# Point search crawlers directly to your GitHub sitemap
+Sitemap: https://github.io
