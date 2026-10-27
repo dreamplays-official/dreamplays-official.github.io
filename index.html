@@ -36,66 +36,106 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://dreamplays-official.github.io/#organization",
-      "name": "Dream Plays India",
-      "legalName": "Dream Plays India",
-      "url": "https://dreamplays-official.github.io/",
-      "logo": "https://dreamplays-official.github.io/favicon.jpg",
-      "foundingDate": "2026-06-10",
-      "description": "Dream Plays India is an officially registered MSME technical enterprise and digital creative platform specializing in free developer tools, responsive frameworks, and lightweight client-side AI applications for students, artists, and creators.",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "Udyam Registration Number",
-        "value": "UDYAM-UK-12-0098916"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Rudrapur",
-        "addressRegion": "Uttarakhand",
-        "addressCountry": "IN"
-      },
-      "founder": {
-        "@type": "Person",
-        "@id": "https://dreamplays-official.github.io/#arnavtyagi"
-      },
-      "sameAs": [
-        "https://crunchbase.com",
-        "https://www.f6s.com/dreamplays-hq",
-        "https://github.com/dreamplays-official"
-      ]
-    },
-  {
-  "@type": "Person",
-  "@id": "https://dreamplays-official.github.io/#arnavtyagi",
-  "name": "Arnav Tyagi",
+  "@type": ["Organization", "EducationalOrganization"],
+  "@id": "https://dreamplays-official.github.io/#organization",
+  "name": "Dream Plays India",
+  "legalName": "Dream Plays India",
+  "alternateName": "DreamPlays India",
   "url": "https://dreamplays-official.github.io/",
-  "jobTitle": "Founder & CEO",
-  "worksFor": {
-    "@id": "https://dreamplays-official.github.io/#organization"
+  "mainEntityOfPage": "https://dreamplays-official.github.io/",
+  "description": "Dream Plays India is an officially registered MSME technical enterprise and digital creative platform specializing in free developer tools, responsive frameworks, and lightweight client-side AI applications for students, artists, and creators.",
+  "foundingDate": "2026-06-10",
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://dreamplays-official.github.io/#logo",
+    "url": "https://dreamplays-official.github.io/favicon.jpg",
+    "caption": "Dream Plays India Official Logo"
   },
-  "description": "Founder and CEO of Dream Plays India, creator of AYARTSTUDIO, focusing on building educational tools and web applications using a smartphone.",
-  "image": "https://dreamplays-official.github.io/founder.jpg",
+  "image": {
+    "@type": "ImageObject",
+    "@id": "https://dreamplays-official.github.io/#org-image",
+    "url": "https://dreamplays-official.github.io/favicon.jpg",
+    "caption": "Dream Plays India Brand Asset"
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Udyam Registration Number",
+    "value": "UDYAM-UK-12-0098916"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rudrapur",
+    "addressRegion": "Uttarakhand",
+    "addressCountry": "IN"
+  },
+  "knowsAbout": [
+    "Web Development",
+    "Client-Side AI Applications",
+    "Open Source Software",
+    "EdTech Solutions",
+    "Mobile App Development"
+  ],
   "sameAs": [
-    "https://www.crunchbase.com/person/arnav-tyagi-3193",
-    "https://www.f6s.com/arnav-tyagi",
-    "https://www.linkedin.com/in/arnav-tyagi-833207429",
+    "https://www.f6s.com/dreamplays-hq",
     "https://github.com/dreamplays-official",
-    "https://www.producthunt.com/@arnav_tyagi_ceo",
-    "https://x.com/dreamplayshq",
-    "https://www.instagram.com/arnavtyagi9870"
-  ]
-},
+    "https://www.crunchbase.com/organization/dream-plays-india"
+  ],
+  "founder": {
+    "@type": "Person",
+    "@id": "https://dreamplays-official.github.io/#arnavtyagi",
+    "name": "Arnav Tyagi",
+    "alternateName": "Arnav Tyagi CEO",
+    "url": "https://dreamplays-official.github.io/",
+    "mainEntityOfPage": "https://dreamplays-official.github.io/",
+    "jobTitle": "Founder & CEO",
+    "description": "Founder and CEO of Dream Plays India, creator of AYARTSTUDIO, focusing on building educational tools and web applications using a smartphone.",
+    "gender": "Male",
+    "nationality": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "@id": "https://dreamplays-official.github.io/#arnav-image",
+      "url": "https://dreamplays-official.github.io/founder.jpg",
+      "caption": "Arnav Tyagi - Founder & CEO of Dream Plays India"
+    },
+    "knowsAbout": [
+      "Entrepreneurship",
+      "Mobile Web Development",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Three.js",
+      "Game Development",
+      
+    ],
+    "sameAs": [
+      "https://www.crunchbase.com/person/arnav-tyagi-3193",
+      "https://www.f6s.com/arnav-tyagi",
+      "https://www.linkedin.com/in/arnav-tyagi-833207429",
+      "https://github.com/dreamplays-official",
+      "https://www.producthunt.com/@arnav_tyagi_ceo",
+      "https://x.com/dreamplayshq",
+      "https://www.instagram.com/arnavtyagi9870"
+    ]
+  },
+  "founders": [
     {
       "@type": "Person",
+      "@id": "https://dreamplays-official.github.io/#arnavtyagi"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dreamplays-official.github.io/#yugankvishnoi",
       "name": "Yugank Vishnoi",
       "jobTitle": "Co-Founder",
-      "worksFor": {
-        "@id": "https://dreamplays-official.github.io/#organization"
+      "description": "Co-Founder of Dream Plays India, specializing in backend architecture and database management.",
+      "gender": "Male",
+      "nationality": {
+        "@type": "Country",
+        "name": "India"
       },
-      "description": "Co-Founder of Dreamplays India, specializing in backend architecture and database management.",
       "image": "https://dreamplays-official.github.io/Dreamplays-biography-/yugank-vishnoi.jpg",
       "knowsAbout": [
         "Backend Architecture",
@@ -113,22 +153,38 @@
         "https://www.issuewire.com/yugank-vishnoi-student-enterpreneur-builds-edtech-platform-dreamplays-hq-entirely-on-mobile-phone-1874911279737061",
         "https://ayartstudio01.online"
       ]
-    },
+    }
+  ],
+  "publishingPrinciples": [
     {
       "@type": "Book",
+      "@id": "https://dreamplays-official.github.io/#book-arnav-tyagi",
       "name": "Arnav Tyagi: The Journey With Smartphone",
+      "inLanguage": "en",
+      "url": "https://dreamplays-official.github.io/",
       "author": {
         "@id": "https://dreamplays-official.github.io/#arnavtyagi"
       },
       "publisher": {
         "@id": "https://dreamplays-official.github.io/#organization"
       },
-      "inLanguage": "English",
-      "url": "https://dreamplays-official.github.io/"
-    },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Entrepreneurship"
+        },
+        {
+          "@type": "Thing",
+          "name": "Mobile Web Development"
+        }
+      ]
+    }
+  ],
+  "subjectOf": [
     {
       "@type": "NewsArticle",
-      "headline": "How Student Founder Arnav Tyagi Built Dreamplays HQ Using Just a Smartphone",
+      "@id": "https://dreamplays-official.github.io/#article-arnav-tyagi",
+      "headline": "How Student Founder Arnav Tyagi Built Dream Plays India Using Just a Smartphone",
       "image": [
         "https://dreamplays-official.github.io/Dreampalys-biography-/arnav-tyagi.jpg"
       ],
@@ -144,7 +200,6 @@
   ]
 }
 </script>
-
   
 
   
